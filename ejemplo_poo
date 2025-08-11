@@ -1,0 +1,21 @@
+#Clase de funcion, nombre descriptivo de la clase que quieres usar.
+#En el ejemplo una clase con su respectivo nombre:
+#class perro: # sintaxis "class"
+#agregarle una clase a una funcion en nuestro codigo.
+#El ejemplo de abajo es agregarle un metodo para agregarles nuestro atributos al codigo que queremos escribir.
+
+class perro:
+    def __init__(self, nombre, raza):
+        self.nombre = nombre
+        self.raza = raza
+
+#ahora un ejemplo para agregarle una funcion en nuestro metodo:
+    def ladrar(self):
+     print("Guau!")
+
+mi_perro = perro("Toby", "Labrador")
+otro_peroo = perro("Peludito","Maltés")
+
+#Crearle un objeto (Instancia) de la clase Perro
+print(f"El nombre de mi perro es: {mi_perro.nombre}")
+mi_perro.ladrar()
